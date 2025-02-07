@@ -1,0 +1,55 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.txt {
+  position: relative;
+  overflow: hidden;
+}
+.area {
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.d_ct {
+  width: 600rpx;
+  padding: 36rpx 20rpx 20rpx;
+  margin: 0 auto 30rpx;
+  background: #ffecd3;
+  border-radius: 20rpx;
+  box-shadow: inset 0 0 20rpx #fec994;
+}
+.d_ct .txt {
+  font-size: 26rpx;
+  color: #2f0b03;
+  width: 100%;
+  min-height: 200rpx;
+  line-height: 46rpx;
+  padding: 28rpx 20rpx 28rpx 45rpx;
+  background: #ffddaf;
+  border: 2rpx solid #fff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 20rpx #edbd87;
+  margin-top: 30rpx;
+}
+
+.scratch-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 20rpx;
+  overflow: hidden;
+}

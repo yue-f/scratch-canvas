@@ -1,0 +1,20 @@
+<view class="area P1_4">
+    <view class="bd">
+      <view class="d_ct" wx:for="{{questions}}" wx:key="index">
+        <view class="cap3">{{item.question}}
+          <view wx:if="{{index==1}}" class="d s_tip">（至少列举三项）</view>
+        </view>
+        <view class="txt">
+          <!-- 添加canvas用于刮刮答案区域，显示答案 -->
+          <canvas id="scratchCanvas-{{index}}" type="2d" class="scratch-canvas" catchtouchstart="onTouchStart" catchtouchmove="onTouchMove" catchtouchend="onTouchEnd" data-index="{{index}}"></canvas>
+
+          <!-- 显示逐步揭开的答案 -->
+          <view wx:if="{{item.answerVisible}}" class="answer">
+            <text>{{item.answerVisible}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <view class="ft"></view>
+  </view>
